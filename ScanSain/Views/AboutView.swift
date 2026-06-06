@@ -36,7 +36,13 @@ struct AboutView: View {
                 }
 
                 Section {
-                    Label("Application gratuite, sans publicité, open source.", systemImage: "heart")
+                    Label("Application gratuite, sans publicité, open source, offerte par Pierre Jankowiak.", systemImage: "heart")
+                    Label {
+                        Link("Proposer une amélioration : scanvad@jankowiak.fr",
+                             destination: URL(string: "mailto:scanvad@jankowiak.fr")!)
+                    } icon: {
+                        Image(systemName: "envelope")
+                    }
                     Label("Données produits : Open Food Facts (ODbL).", systemImage: "leaf")
                 } footer: {
                     Text("Ce résultat est une aide, pas un avis médical ni une garantie. Vérifiez toujours l'étiquette. En cas de doute, demandez à un professionnel de santé.")
