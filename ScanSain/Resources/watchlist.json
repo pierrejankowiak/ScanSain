@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "mise_a_jour": "2026-06-06",
+  "ingredients": [
+    {
+      "id": "gluten",
+      "nom": "Gluten (céréales)",
+      "criticite": "rouge",
+      "motif": "Le gluten (blé, orge, seigle et leurs dérivés) est strictement interdit en cas de maladie cœliaque. Sa présence est ici avérée ou déclarée.",
+      "aliases": [
+        "blé", "froment", "orge", "seigle", "épeautre", "petit épeautre",
+        "kamut", "triticale", "malt", "extrait de malt", "arôme de malt",
+        "sirop de malt", "seitan", "son de blé", "semoule de blé", "semoule",
+        "boulgour", "gluten de blé", "gluten", "farine de blé", "amidon de blé"
+      ],
+      "additifs_tags": [],
+      "allergenes_tags": ["gluten"],
+      "exceptions": [
+        {
+          "aliases": ["blé noir", "sarrasin"],
+          "criticite": "vert",
+          "motif": "Le blé noir (sarrasin) ne contient pas de gluten malgré son nom. Sans danger pour les cœliaques."
+        }
+      ]
+    },
+    {
+      "id": "amidon-modifie",
+      "nom": "Amidon modifié / amidon non précisé",
+      "criticite": "orange",
+      "motif": "Un amidon « modifié » ou « amidon » sans céréale précisée peut provenir du blé. À vérifier sur l'étiquette : si l'origine n'est pas indiquée, prudence.",
+      "aliases": ["amidon modifié", "amidon transformé", "amidon", "fécule"],
+      "additifs_tags": [],
+      "allergenes_tags": [],
+      "exceptions": [
+        {
+          "aliases": [
+            "amidon de maïs", "amidon modifié de maïs", "amidon de maïs cireux",
+            "amidon de pomme de terre", "amidon modifié de pomme de terre",
+            "amidon de riz", "amidon de tapioca", "amidon de manioc",
+            "fécule de maïs", "fécule de pomme de terre", "maïzena"
+          ],
+          "criticite": "vert",
+          "motif": "Maïs, pomme de terre, riz, tapioca et manioc ne contiennent pas de gluten. Ces amidons sont sans danger."
+        }
+      ]
+    },
+    {
+      "id": "avoine",
+      "nom": "Avoine",
+      "criticite": "orange",
+      "motif": "L'avoine est naturellement sans gluten mais presque toujours contaminée par du blé lors de la culture et de la transformation. À éviter, sauf mention explicite « sans gluten ».",
+      "aliases": ["avoine", "flocons d'avoine", "son d'avoine", "farine d'avoine"],
+      "additifs_tags": [],
+      "allergenes_tags": [],
+      "exceptions": [
+        {
+          "aliases": ["avoine sans gluten", "avoine pure", "flocons d'avoine sans gluten"],
+          "criticite": "vert",
+          "motif": "L'avoine certifiée sans gluten est tolérée par la grande majorité des cœliaques."
+        }
+      ]
+    },
+    {
+      "id": "proteines-hydrolysees",
+      "nom": "Protéines végétales hydrolysées",
+      "criticite": "orange",
+      "motif": "Les protéines végétales hydrolysées peuvent être issues du blé lorsque l'origine n'est pas précisée.",
+      "aliases": [
+        "protéines végétales hydrolysées", "protéine végétale hydrolysée",
+        "protéines hydrolysées", "protéines de blé"
+      ],
+      "additifs_tags": [],
+      "allergenes_tags": [],
+      "exceptions": []
+    },
+    {
+      "id": "sauce-soja",
+      "nom": "Sauce soja",
+      "criticite": "orange",
+      "motif": "La sauce soja classique est très souvent fabriquée avec du blé. Préférer un tamari ou une sauce soja portant la mention « sans gluten ».",
+      "aliases": ["sauce soja", "sauce de soja", "soy sauce"],
+      "additifs_tags": [],
+      "allergenes_tags": [],
+      "exceptions": [
+        {
+          "aliases": ["tamari sans gluten", "sauce soja sans gluten"],
+          "criticite": "vert",
+          "motif": "Tamari ou sauce soja explicitement sans gluten : sans danger."
+        }
+      ]
+    },
+    {
+      "id": "maltodextrine",
+      "nom": "Maltodextrine",
+      "criticite": "jaune",
+      "motif": "En Europe, même issue du blé, la maltodextrine est tellement transformée qu'elle est considérée sans gluten et exemptée d'étiquetage allergène. Signalée par précaution.",
+      "aliases": ["maltodextrine", "maltodextrines"],
+      "additifs_tags": [],
+      "allergenes_tags": [],
+      "exceptions": []
+    },
+    {
+      "id": "e471",
+      "nom": "E471 (mono- et diglycérides d'acides gras)",
+      "criticite": "jaune",
+      "motif": "Émulsifiant d'origine animale ou végétale, le plus souvent considéré sans gluten. Surveillé ici à votre demande (origine et support parfois non précisés).",
+      "aliases": ["mono- et diglycérides", "monoglycérides", "diglycérides"],
+      "additifs_tags": ["e471"],
+      "allergenes_tags": [],
+      "exceptions": []
+    },
+    {
+      "id": "nitrites",
+      "nom": "Nitrites (E249, E250)",
+      "criticite": "orange",
+      "motif": "Conservateurs des charcuteries. La consommation de viandes transformées riches en nitrites est associée à un risque accru de cancer colorectal (viande transformée classée cancérogène, groupe 1, par le CIRC).",
+      "aliases": ["nitrite de sodium", "nitrite de potassium"],
+      "additifs_tags": ["e249", "e250"],
+      "allergenes_tags": [],
+      "exceptions": []
+    },
+    {
+      "id": "nitrates",
+      "nom": "Nitrates (E251, E252)",
+      "criticite": "jaune",
+      "motif": "Conservateurs proches des nitrites, pouvant se transformer en nitrites dans l'organisme. Surveillés par précaution.",
+      "aliases": ["nitrate de sodium", "nitrate de potassium"],
+      "additifs_tags": ["e251", "e252"],
+      "allergenes_tags": [],
+      "exceptions": []
+    },
+    {
+      "id": "dioxyde-titane",
+      "nom": "Dioxyde de titane (E171)",
+      "criticite": "orange",
+      "motif": "Colorant blanc interdit comme additif alimentaire dans l'Union européenne depuis 2022 (l'EFSA n'a pas pu exclure un effet génotoxique). Peut subsister dans des produits importés ou d'anciens stocks.",
+      "aliases": ["dioxyde de titane"],
+      "additifs_tags": ["e171"],
+      "allergenes_tags": [],
+      "exceptions": []
+    }
+  ]
+}
