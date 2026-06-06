@@ -15,7 +15,7 @@ struct ScannerView: View {
                 zoneScan
                 saisieManuelle
             }
-            .navigationTitle("ScanSain")
+            .navigationTitle("ScanVad")
             .navigationBarTitleDisplayMode(.inline)
             .overlay { if enChargement { chargement } }
             .alert("Oups", isPresented: Binding(

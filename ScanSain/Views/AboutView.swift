@@ -7,7 +7,7 @@ struct AboutView: View {
         NavigationStack {
             List {
                 Section {
-                    Text("ScanSain aide à repérer rapidement, à partir du code-barres d'un produit, les ingrédients à éviter : gluten (déclaré ou caché), additifs surveillés, etc.")
+                    Text("ScanVad aide à repérer rapidement, à partir du code-barres d'un produit, les ingrédients à éviter : gluten (déclaré ou caché), additifs surveillés, etc.")
                 }
 
                 Section("Comment ça marche") {

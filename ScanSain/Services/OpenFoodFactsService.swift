@@ -38,7 +38,7 @@ enum OpenFoodFactsService {
 
         var request = URLRequest(url: url)
         // Open Food Facts demande un User-Agent identifiant l'application.
-        request.setValue("ScanSain/1.0 (open source; github.com/votre-compte/ScanSain)",
+        request.setValue("ScanVad/1.0 (open source; github.com/pierrejankowiak/ScanSain)",
                          forHTTPHeaderField: "User-Agent")
         request.timeoutInterval = 15
 
