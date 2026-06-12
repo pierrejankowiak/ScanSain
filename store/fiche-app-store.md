@@ -1,4 +1,4 @@
-# Fiche App Store — ScanVad
+# Fiche App Store ScanVad
 
 Tout ce qui est à recopier dans **App Store Connect**. Les champs ont des limites de
 caractères indiquées entre parenthèses.

@@ -35,7 +35,7 @@ struct WatchlistView: View {
                         }
                     }
                 } footer: {
-                    Text("Base v\(watchlist.version) — \(watchlist.miseAJour) — source : \(watchlist.origine)")
+                    Text("Base v\(watchlist.version) • \(watchlist.miseAJour) • source : \(watchlist.origine)")
                 }
             }
             .searchable(text: $recherche, prompt: "Rechercher un ingrédient")
