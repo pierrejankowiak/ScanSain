@@ -1,4 +1,6 @@
-# ScanSain
+# ScanSain (ScanVad sur l'App Store)
+
+📲 **Disponible gratuitement sur l'App Store : [ScanVad](https://apps.apple.com/app/scanvad/id6779275593)**
 
 Application iOS **gratuite, sans publicité et open source** qui scanne le code-barres d'un produit
 alimentaire, interroge la base publique [Open Food Facts](https://world.openfoodfacts.org), croise
