@@ -16,6 +16,7 @@ struct OFFProduct: Codable {
     let allergensTags: [String]?
     let tracesTags: [String]?
     let additivesTags: [String]?
+    let labelsTags: [String]?
     let imageFrontSmallURL: String?
 
     enum CodingKeys: String, CodingKey {
@@ -27,6 +28,7 @@ struct OFFProduct: Codable {
         case allergensTags = "allergens_tags"
         case tracesTags = "traces_tags"
         case additivesTags = "additives_tags"
+        case labelsTags = "labels_tags"
         case imageFrontSmallURL = "image_front_small_url"
     }
 
@@ -57,5 +59,16 @@ struct OFFProduct: Codable {
     /// Tags d'additifs sans le préfixe "en:" (ex. "e471").
     var additifs: [String] {
         (additivesTags ?? []).map { $0.split(separator: ":").last.map(String.init) ?? $0 }
+    }
+
+    /// Tags de labels sans le préfixe "en:" (ex. "no-gluten", "organic").
+    var labels: [String] {
+        (labelsTags ?? []).map { $0.split(separator: ":").last.map(String.init) ?? $0 }
+    }
+
+    /// Vrai si le produit porte un label « sans gluten » certifié par Open Food Facts.
+    /// Signal fort : on ne déclenche alors pas d'alerte gluten sur la base du texte.
+    var estEtiquetteSansGluten: Bool {
+        labels.contains { $0 == "no-gluten" || $0 == "gluten-free" }
     }
 }

@@ -21,7 +21,7 @@ enum OpenFoodFactsService {
     private static let champs = [
         "product_name", "product_name_fr", "brands",
         "ingredients_text", "ingredients_text_fr",
-        "allergens_tags", "traces_tags", "additives_tags",
+        "allergens_tags", "traces_tags", "additives_tags", "labels_tags",
         "image_front_small_url"
     ].joined(separator: ",")
 
